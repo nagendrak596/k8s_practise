@@ -10,6 +10,9 @@ spec:
       type: frontend
   replicas: 3
   template:
+    metadata:
+      labels: 
+        type: frontend
     spec:
       containers:
       - name: nginx

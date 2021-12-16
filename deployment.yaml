@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: deployment
   labels:
-    type: frontend
+    type: backend
 spec:
   selector:
     matchLabels:
-      type: frontend
+      type: backend
   replicas: 3
   template:
     metadata:
       labels: 
-        type: frontend
+        type: backend
     spec:
       containers:
       - name: nginx

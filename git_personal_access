@@ -1,0 +1,7 @@
+  git config --global user.name "ayyappamottupalli"
+  git config --global user.email "ayyappa9848640924@gmail.com"
+  git config -l
+  git config --global credential.helper cache
+to remove credentials from vm then command 
+
+git config --global --unset credential.helper
